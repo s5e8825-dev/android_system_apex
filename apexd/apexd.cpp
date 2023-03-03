@@ -3759,6 +3759,7 @@ int ActivateFlattenedApex() {
     return 1;
   }
 
+SetProperty("APEXREADY", "1");
   return 0;
 }
 
