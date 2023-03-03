@@ -19,3 +19,6 @@ service apexd-snapshotde /system/bin/apexd --snapshotde
     group system
     oneshot
     disabled
+
+on property:APEXREADY=1
+    stop apexd-bootstrap 
